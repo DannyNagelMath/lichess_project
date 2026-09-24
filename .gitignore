@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+
+# Node
+node_modules/
+dist/
+
+# Secrets (e.g. a Lichess API token)
+.env
+
+# Game data, if large or re-downloadable
+pipeline/data/
