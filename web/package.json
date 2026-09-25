@@ -4,16 +4,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "check": "tsc --noEmit",
+    "check": "tsc --noEmit && tsc --noEmit -p scripts",
+    "check-tree": "tsx scripts/checkTree.ts",
     "test": "vitest run",
     "build": "tsc --noEmit && vite build"
   },
   "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.1",
     "vitest": "^5.0.1"
   },
   "dependencies": {
-    "chessground": "^9.2.1"
+    "chessground": "^9.2.1",
+    "chessops": "^0.15.1"
   }
 }
